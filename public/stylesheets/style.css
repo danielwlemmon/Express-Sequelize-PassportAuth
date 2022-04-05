@@ -1,0 +1,137 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  background-color: lightgray;
+}
+
+.navbar {
+  max-width: 900px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #678;
+}
+
+li{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #678;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#loginHeader {
+  max-width: 900px;
+  background-color: #678;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 20px
+}
+
+.lowbutton {
+  display: inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #111;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #111;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.lowbutton:hover {
+  color:#000000;
+  background-color: #678;
+}
+
+@media all and (max-width:30em){
+  .lowbutton{
+    display: block;
+    margin:0.4em auto;
+  }
+}
+
+.formarea {
+  padding:10px 20px 10px 20px;
+  max-width: 880px;
+}
+
+.inputline {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+label {
+  display: inline-block;
+  clear: left;
+  width: 250px;
+  text-align: right;
+}
+
+input {
+  display: inline-block;
+  width: 200px;
+}
+
+textarea {
+  display: inline-block;
+  width: 200px;
+}
+
+.profilearea {
+  padding:10px 20px 10px 80px;
+  max-width: 450px;
+  border: #678 solid 2px;
+  border-radius: 9px;
+}
+
+.posttitletext {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.postbodytext {
+  display: inline-block;
+ margin-left: 100px;
+ border: 2px #678 solid;
+ border-radius: 5px;
+ min-width: 500px ;
+ padding: 5px;
+ min-height: 30px;
+}
+
+.textlink {
+  text-decoration: none;
+  color: #678;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.textlink:hover {
+  font-size: large;
+  border: 2px solid #678;
+  border-radius: 9px;
+}
+
+#admin_users {
+  padding-left: 80px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 400px;
+  margin: 5px;
+  min-width: 900;
+  border: #678 solid 2px;
+  border-radius: 9px;
+}

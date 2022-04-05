@@ -1,0 +1,18 @@
+<h1 id="loginHeader">Welcome! Please log in</h1>
+<form name="login" method="POST" action="/users/login">
+    <div class="formarea">
+        <div class="inputline">
+            <label for="username">Username: </label>
+            <input type="text" name="username" required>
+        </div>
+        <div class="inputline">
+            <label for="password">Password: </label>
+            <input type="password" name="password" required>
+        </div>
+    </div>
+    <div>
+        <button class="lowbutton" type="submit">Submit</button>
+    </div>
+</form>
+
+<button class="lowbutton" onclick="location.href = '/users/signup';">Create account</button>

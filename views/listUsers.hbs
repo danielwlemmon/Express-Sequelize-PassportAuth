@@ -1,0 +1,21 @@
+<ul class="navbar">
+  <li class="navli"><a href="/users/logout">logout</a></li>
+</ul>
+<table id="admin_users">
+  <tr>
+    <th>Name</th>
+    <th>Username</th>
+  </tr>
+</table>
+
+<div>
+  {{#each users}}
+  <form action="/users/admin/deleteUser/{{UserId}}" method="POST">
+    <button class="lowbutton" type="submit">Delete</button>
+    <a class="textlink" href="/users/admin/{{UserId}}">
+      {{FirstName}} {{LastName}}
+      {{Username}}
+    </a>
+  </form><br>
+  {{/each}}
+</div>

@@ -1,0 +1,18 @@
+<ul class="navbar">
+    <li><a href="/users/profile">Cancel</a></li>
+</ul>
+<form method="POST" action="/users/createPost">
+    <div class="formarea">
+        <div class="inputline">
+            <label for="postTitle">Post Title: </label>
+            <input type="text" name="postTitle" required>
+        </div>
+        <div class="inputline">
+            <label for="postBody">Body: </label>
+            <textarea type="textarea" name="postBody" required></textarea>
+        </div>
+    </div>
+    <div>
+        <button class="lowbutton" type="submit">Submit Post</button>
+    </div>
+</form>

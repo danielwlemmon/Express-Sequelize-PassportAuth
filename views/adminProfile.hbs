@@ -1,0 +1,17 @@
+<ul class="navbar">
+  <li class="navli"><a href="http://localhost:3000/users/admin">User List</a></li>
+  <li class="navli"><a href="http://localhost:3000/users/logout">logout</a></li>
+</ul>
+<div class="profilearea">
+  <h1>Name: {{user.FirstName}} {{user.LastName}}</h1>
+  <h2>Email: {{user.Email}}</h2>
+</div>
+<h3>Posts by user: {{user.Username}}</h3>
+{{#each posts}}
+<form method="POST" action="/users/admin/deletePost/{{PostId}}">
+  <button class="lowbutton" type="submit">Delete</button>
+  <a class="posttitletext">{{PostTitle}}: </a><br>
+  <a class="postbodytext">{{PostBody}}</a>
+  <br>
+</form>
+{{/each}}
